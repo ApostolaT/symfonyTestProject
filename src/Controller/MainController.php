@@ -18,13 +18,13 @@ class MainController extends AbstractController
     }
 
     /**
-     * @Route("/custom/{userName?}", name="custom")
+     * @Route("/custom/{name?}", name="custom")
      * @param Request $request
      * @return Response
      */
     public function custom(Request $request)
     {
-        $userName = $request->get("userName");
+        $userName = $request->get("name");
         return $this->render('home/custom.html.twig', [
             'name' => $userName
         ]);
