@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2685c78-52fa-4278-8c5b-2d9d91c9ead5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sfTestProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sfTestProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/custom.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/custom.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/post/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +121,8 @@
       <workItem from="1596480384040" duration="27000" />
       <workItem from="1596480422981" duration="3849000" />
       <workItem from="1596560856208" duration="2232000" />
-      <workItem from="1596650704722" duration="3004000" />
+      <workItem from="1596650704722" duration="3675000" />
+      <workItem from="1597083608569" duration="6605000" />
     </task>
     <servers />
   </component>
@@ -131,6 +130,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="658" y="264" width="824" height="691" key="#Servers" timestamp="1597089337953">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="658" y="264" width="824" height="691" key="#Servers/0.27.1920.1053@0.27.1920.1053" timestamp="1597089337953" />
+    <state x="533" y="264" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597089342037">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="533" y="264" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1597089342037" />
     <state x="149" y="355" width="652" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596482510850">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -143,6 +150,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="275" y="479" width="399" height="156" key="NewPhpFileDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1596482411105" />
+    <state x="144" y="252" key="run.anything.popup" timestamp="1597090732296">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="144" y="252" key="run.anything.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1597090732296" />
     <state x="143" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1596482328086">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
