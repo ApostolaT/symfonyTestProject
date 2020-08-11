@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Post;
+use App\Form\PostType;
 use App\Repository\PostRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
@@ -17,7 +18,7 @@ use Symfony\Component\Routing\Annotation\Route;
  */
 class PostController extends AbstractController
 {
-    private $postRepository;
+    private PostRepository $postRepository;
     /**
      * PostController constructor.
      * @param PostRepository $postRepository
@@ -27,18 +28,21 @@ class PostController extends AbstractController
         $this->postRepository = $postRepository;
     }
 
-
     /**
      * @Route("/", name="index")
-     * @param PostRepository $postRepository
      * @return Response
      */
     public function index()
     {
         $posts = $this->postRepository->findAll();
+        $form = $this->createForm(PostType::class, new Post(), [
+            'action' => $this->generateUrl('post.create'),
+            'method' => 'POST'
+        ]);
 
         return $this->render('post/index.html.twig', [
             'posts' => $posts,
+            'form' => $form->createView()
         ]);
     }
 
@@ -49,15 +53,16 @@ class PostController extends AbstractController
      */
     public function create(Request $request) {
         $post = new Post();
-        $post->setTitle("This is my title");
+        $post->setTitle($request->request->get('post')['title']);
 
-        //entityManager
         $em = $this->getDoctrine()->getManager();
 
         $em->persist($post);
         $em->flush();
 
-        return $this->redirect($this->generateUrl('post.index'));
+        $this->addFlash('success', 'Post created successfully!');
+
+        return $this->redirect($this->generateUrl("post.index"));
     }
 
     /**
@@ -84,6 +89,8 @@ class PostController extends AbstractController
 
         $em->remove($post);
         $em->flush();
+
+        $this->addFlash('success', 'Post was removed.');
 
         return $this->redirect($this->generateUrl("post.index"));
     }
